@@ -1,0 +1,285 @@
+* {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    min-height: 300px;
+    background-color: black;
+    min-height: 600px;
+    
+}
+
+#burger-menu { 
+    display: none;
+}
+
+
+
+.menu a{
+    /* background-color:  rgb(50, 127, 168); */
+    background-image: linear-gradient(#5cccdb, #104e57);
+    display: inline-block;
+    width: 10rem;
+    height: 6.25rem;
+    flex-shrink: 1;
+    margin: 10px;
+    box-shadow: 6px 6px 20px black;
+    opacity: 0.4;
+    text-align: center;
+}
+a {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 5px 5px 20px black;
+    position: relative;
+    top: 25%;
+    text-decoration: none;
+}
+
+img {
+    height: 40px;
+}
+
+@keyframes example {
+    0%{ opacity: 0.4;}
+    15%{ opacity: 0.5;}
+    30%{ opacity: 0.6;}
+    60%{ opacity: 0.7;}
+    75%{ opacity: 0.8;}
+    90%{ opacity: 0.9;}
+    100%{ opacity: 1.0;}
+    
+}
+
+.menu {
+    height: 15%;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    display: flex;
+    /* /* align-items: center; */
+    justify-content: center; 
+    flex-shrink: 1;
+    top: 0px;
+    z-index: 2;
+    min-width: 30%;
+    /* max-width: 880px; */
+}
+
+.signup-title {
+    font-size: 1.5rem;
+    height: 20%;
+}
+
+
+main {
+    height: 70%;
+    max-width: 890px;
+    position: relative;
+    margin-top: 15%;
+    top: 20%;
+    margin: auto;
+    z-index: 1;;
+    /* background-color:  rgba(50, 127, 168); */
+    background-image: linear-gradient(#7ee2ff, #213b3f);
+    box-shadow: 6px 6px 20px black;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+section {
+    height: 100px;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+
+.menu span {
+    position: relative;
+    top: 25%;
+}
+
+#headerMenu {
+    height: 20px;
+}
+
+.menu a:hover {
+    animation-name: example;
+    animation-duration: 0.17s;
+    opacity: 1;
+}
+
+.menu .rcorners1 {
+    border-top-left-radius: 25px;
+    margin-left: 0px;
+}
+.menu .rcorners3 {
+    border-top-right-radius: 25px;
+    margin-right: 0px;
+}
+
+.show-modal {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.75rem 3.5rem;
+    margin: 5rem 2rem;
+    border: none;
+    position: fixed;
+    background-color: #fff;
+    color: #444;
+    border-radius: 10rem;
+    cursor: pointer;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: 1px solid black;
+    background: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  table, th, td {
+    border: 1px solid white;
+    height: 4%;
+  }
+
+  table {
+      margin: auto;
+  }
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 1rem;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 50%;
+    background-color: white;
+    /* padding: 6rem; */
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+
+  button {
+      height: 20px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+
+  label {
+      display: inline;
+  }
+  main h1 {
+      height: 5%;
+  }
+  main h2, main h3, main h5 {
+    height: 5%;
+}
+  p {
+      height: 10%;
+  }
+
+  select,
+  input {
+      margin: auto;
+      margin: 10px;
+      height: 20px;
+      display: inline;
+  }
+@media (max-width: 960px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 750px) {
+    body {
+        background-color: black; 
+    }
+    .menu a {
+        width: 6rem;
+        height: 6.25rem;
+    }
+    main {
+        width: 80%;
+    }
+
+    a {
+        color: white;
+        font-size: 1.5rem;
+        text-shadow: 5px 5px 20px black;
+        
+        text-decoration: none;
+    }
+
+    .menu span {
+        position: relative;
+        top: 25%;
+    }
+   
+}
+
+@media (max-width: 640px) {
+    body {
+        /* background-color: black; For browsers that do not support gradients */
+        /* background-image: linear-gradient(rgb(0, 0, 0), rgba(65, 64, 64, 0.8)); */
+    }
+/* 
+    #burger-menu { 
+        height: 40px;
+        display: initial;
+    }
+    
+    #burger-menu input {
+        position: relative;
+        top: 20%;
+        height: 40px;
+        background: url("https://icon-library.com/images/white-menu-icon/white-menu-icon-12.jpg");
+    } */
+    .menu a {
+        width: 4rem;
+        height: 4.25rem;
+    }
+    a {
+        color: white;
+        font-size: 1rem;
+        text-shadow: 5px 5px 20px black;
+        
+        text-decoration: none;
+    }
+
+    
+}
+
